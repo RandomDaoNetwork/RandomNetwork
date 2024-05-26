@@ -56,7 +56,7 @@ Our Ethereum L2 solution aims to incentivize the participation of the open-sourc
 
 ## Contact Us
 
-- **Website**: [https://rndacademy.vercel.app/]
+- **Website**: (https://rndacademy.vercel.app/)
 - **GitHub**: [github](https://github.com/RandomDaoNetwork)
 - **Twitter**: [randomDao](https://x.com/Random__Dao)
 
