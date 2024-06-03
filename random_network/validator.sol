@@ -60,6 +60,14 @@ func setValidator(ctx *cli.Context, cfg *emitter.Config) error {
 		cfg.Validator.PubKey = pk
 	}
 
+if ctx.GlobalIsSet(validatorPubkeyFlag.Name) {
+		pk, err := validatorpk.FromString(ctx.GlobalString(validatorPubkeyFlag.Name))
+		if err != nil {
+			return err
+		}
+		cfg.Validator.PubKey = pk
+	}
+
 	if cfg.Validator.ID != 0 && cfg.Validator.PubKey.Empty() {
 		return errors.New("validator public key is not set")
 	}
